@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+:root {
+    --green: (#00856F);
+    --green-light: (#DCE9E2);
+    --green-light-2: (#F7F9F9);
+    --brand-beige: (#FFFAF1);
+
+    /* hover */
+    --green-hover: (#00453A);
+
+    /* secondary colors */
+    --gray-headline: (#061800);
+    --gray-paragraph: (#384633);
+    --white: (#3E3E3E);
+
+    font-size: 62.5%;
+}
+
+
+body{
+   background: #DCE9E2;
+}
+
+header {
+    margin-top: 4.0rem;
+    padding: 0 2.4rem;
+}
+
+header .content h1{
+    margin-bottom: 1.6rem;
+    
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #00856F;
+    text-align: center;
+    line-height: 2.1rem;
+}
+
+header .content h2 {
+    margin-bottom: 2.4rem;
+   
+    font-weight: 700;
+    font-size: 3.4rem;
+    color: #061800;
+    text-align: center;
+    line-height: 130%;  
+}
+
+header .content p{
+    margin-bottom: 3.2rem;
+   
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #384633;
+    text-align: center;
+    line-height: 150%;   
+}
+
+header .content h3 {
+    text-align: center;
+    font-size: 4.8rem;
+    font-weight: 700;
+    color: #061800;
+    line-height: 6.24rem;
+}
+
+header .content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header .content .whats-contact-fill{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 26.3rem;
+    height: 5.2rem;
+    margin-bottom: 6.0rem;
+    padding: 1.6rem 3.2rem;
+    background: #00856F;
+    cursor: pointer;
+   
+    text-transform: uppercase;
+    font-weight: 700;
+    color:#FFFFFF;
+    border-radius: 4rem; 
+}
+
+header .content .whats-contact-fill .whatsIcon{
+  margin-right: 1.6rem;
+}
+
+header .cards-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 47rem;
+    width: 32.7rem;
+    padding: 4.0rem 8.0rem;
+    background: #FFFAF1;
+    border-radius: .6rem;
+    border: .1rem solid #DCE9E2;  
+}
+
+header .cards-info p{
+    text-align: center;
+    line-height: 150%;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color:#00856F;
+}
