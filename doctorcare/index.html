@@ -23,7 +23,7 @@
     <title>DoctorCare</title>
 </head>
 
-<body onscroll="onScroll()">
+<body onscroll="onScroll()" class="">
     <nav id="navigation" class="">
 
         <div class="wrapper">
@@ -63,14 +63,14 @@
             </a>
 
             <div class="menu">
-                <ul>
-                    <li><a href="#">Ínicio</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Serviços</a></li>
+                <ul class="nav-list">
+                    <li><a title="Inicio" href="#">Ínicio</a></li>
+                    <li><a title="Sobre" href="#">Sobre</a></li>
+                    <li><a title="Serviços" href="#">Serviços</a></li>
                     <!-- <li><a href="#">Depoimentos</a></li> -->
                 </ul>
 
-                <button>Agende a sua consulta</button>
+                <a class="button" title="Agende a sua consulta" href="#">Agende a sua consulta</a>
 
                 <ul class="social-links">
                     <li>
@@ -122,12 +122,24 @@
                 </ul>
             </div>
 
-            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M10 20H30" stroke="#00856F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M10 12H30" stroke="#00856F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M18 28L30 28" stroke="#00856F" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" />
-            </svg>
+            <button aria-expanded="false" aria-label="Abrir menu" onclick="openMenu()" class="open-menu">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 20H30" stroke="#00856F" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M10 12H30" stroke="#00856F" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M18 28L30 28" stroke="#00856F" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
+
+            <button aria-expanded="true" aria-label="Fechar menu" onclick="closeMenu()" class="close-menu">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M30 10L10 30M10 10L30 30" stroke="#00856F" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+
+            </button>
 
         </div>
 
