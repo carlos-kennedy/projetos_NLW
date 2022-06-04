@@ -74,7 +74,7 @@ header::before {
   z-index: -1;
 }
 
-header h1 {
+header h2 {
   /* margin-top: 4rem; */
   margin-bottom: 1.6rem;
 
@@ -84,7 +84,7 @@ header h1 {
   line-height: 2.1rem;
 }
 
-header h2 {
+header h1 {
   margin-bottom: 2.4rem;
 
   font-weight: 700;
@@ -219,7 +219,7 @@ body.menu-expanded .close-menu {
   visibility: visible;
 }
 
-body.menu-expanded .close-menu{
+body.menu-expanded .close-menu {
   right: 2rem;
 }
 
@@ -297,4 +297,52 @@ body.menu-expanded .logo path {
 
 body.menu-expanded button path {
   stroke: var(--white);
+}
+
+/* ==============HEADER CARDS========== */
+
+#services header {
+  margin-top: 10rem;
+  margin-bottom: 6rem;
+}
+
+#services header h2 {
+  margin-bottom: 1.6rem;
+
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 150%;
+
+  letter-spacing: 0.08rem;
+
+  text-transform: uppercase;
+  color: var(--green);
+}
+
+#services header h3 {
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 3.9rem;
+  text-align: center;
+  color: var(--gray-headline);
+}
+
+#services .cards {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+#services .card {
+  padding: 2.4rem;
+
+  border-radius: 0.6rem;
+  border: 0.1rem solid var(--green-light);
+  background: var(--white);
+
+  text-align: left;
+}
+
+#services .card h3 {
+  margin-block: 1.6rem;
 }
