@@ -219,6 +219,10 @@ body.menu-expanded .close-menu {
   visibility: visible;
 }
 
+body.menu-expanded .close-menu{
+  right: 2rem;
+}
+
 body.menu-expanded .menu {
   position: fixed;
   top: 0;
