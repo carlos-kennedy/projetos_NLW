@@ -30,6 +30,10 @@
   --nav-height: 7.2rem;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   width: 100%;
@@ -41,6 +45,7 @@ body {
   font-size: 1.6rem;
   font-family: "DM Sans", sans-serif;
 
+  background: var(--bg-green-light);
   overflow: overlay;
 }
 
@@ -54,10 +59,10 @@ section {
   padding: 0rem 2.4rem;
 }
 
-/*=================HEADER================= */
+/*=================HOME================= */
 
 header .content {
-  margin-top: calc(4.1rem + var(--nav-height));
+  padding-top: calc(4.1rem + var(--nav-height));
 
   display: flex;
   align-items: center;
@@ -65,7 +70,7 @@ header .content {
   flex-direction: column;
 }
 
-header::before {
+#home::before {
   content: "";
   width: 100%;
   height: calc(108rem + var(--nav-height));
@@ -78,7 +83,7 @@ header::before {
   z-index: -1;
 }
 
-header h2 {
+#home h2 {
   /* margin-top: 4rem; */
   margin-bottom: 1.6rem;
 
@@ -88,7 +93,7 @@ header h2 {
   line-height: 2.1rem;
 }
 
-header h1 {
+#home h1 {
   margin-bottom: 2.4rem;
 
   font-weight: 700;
@@ -97,7 +102,7 @@ header h1 {
   line-height: 130%;
 }
 
-header .descr {
+#home .descr {
   margin-bottom: 3.2rem;
 
   font-size: 1.8rem;
@@ -106,7 +111,7 @@ header .descr {
   line-height: 150%;
 }
 
-header .whats-button-filled {
+#home .whats-button-filled {
   width: 26.3rem;
   height: 5.2rem;
 
@@ -127,7 +132,7 @@ header .whats-button-filled {
   color: var(--white);
 }
 
-header .whats-button-filled .whatsIcon {
+#home .whats-button-filled .whatsIcon {
   margin-right: 1.6rem;
 }
 
@@ -145,7 +150,7 @@ header .whats-button-filled .whatsIcon {
   background: var(--bg-green-light);
 }
 
-header img {
+#home img {
   width: 26.4rem;
 }
 
@@ -217,14 +222,18 @@ body.menu-expanded .open-menu {
   visibility: hidden;
 }
 
+body.menu-expanded .close-menu {
+  right: 2rem;
+}
+
 body.menu-expanded .menu,
 body.menu-expanded .close-menu {
   opacity: 1;
   visibility: visible;
 }
 
-body.menu-expanded .close-menu {
-  right: 2rem;
+.menu {
+  transform: translateY(100%);
 }
 
 body.menu-expanded .menu {
@@ -237,6 +246,9 @@ body.menu-expanded .menu {
   height: 100vh;
 
   padding: var(--nav-height);
+
+  transition: transform 850ms;
+  transform: translateY(0);
 }
 
 body.menu-expanded nav {
