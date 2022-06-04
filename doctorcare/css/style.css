@@ -1,4 +1,4 @@
-/* ===========Geral============== */
+/* ===========GERAL============== */
 
 * {
   margin: 0;
@@ -57,6 +57,149 @@ section {
   width: 37.5rem;
   margin: 0 auto;
   padding: 0rem 2.4rem;
+}
+
+/* ========NAVIGATION========== */
+
+nav {
+  display: flex;
+  height: var(--nav-height);
+
+  position: fixed;
+  top: 0;
+  width: 100vw;
+
+  z-index: 100;
+}
+
+nav .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav.scroll {
+  background: var(--green);
+  width: 100vw;
+}
+
+nav.scroll svg:nth-child(1) path {
+  fill: var(--white);
+}
+
+nav.scroll button path {
+  stroke: var(--white);
+}
+
+nav button {
+  background: none;
+  cursor: pointer;
+}
+
+/* ======== MENU-EXPANDED ========== */
+
+body.menu-expanded {
+  overflow: hidden;
+}
+
+body.menu-expanded > :not(nav) {
+  visibility: hidden;
+}
+
+.menu,
+.close-menu,
+body.menu-expanded .open-menu {
+  opacity: 0;
+  visibility: hidden;
+}
+
+body.menu-expanded .close-menu {
+  right: 2rem;
+}
+
+body.menu-expanded .menu,
+body.menu-expanded .close-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.menu {
+  transform: translateY(100%);
+}
+
+body.menu-expanded .menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: var(--green);
+
+  width: 100vw;
+  height: 100vh;
+
+  padding: var(--nav-height);
+
+  transition: transform 300ms;
+  transform: translateY(0);
+}
+
+.menu ul:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem;
+
+  font-size: 2.4rem;
+  line-height: 3.1rem;
+  font-weight: 700;
+
+  margin-top: 6rem;
+}
+
+.menu ul li a {
+  color: var(--white);
+}
+
+.menu .button {
+  width: 27.4rem;
+  height: 5.5rem;
+
+  margin-top: 4.8rem;
+  margin-bottom: 8rem;
+  padding: 1.6rem 3.2rem;
+
+  background: var(--white);
+
+  border-radius: 4rem;
+
+  font-weight: 700;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  line-height: 23.4rem;
+  color: var(--green);
+}
+
+.menu .social-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3.2rem;
+}
+
+.social-links svg path {
+  fill: var(--white);
+}
+
+body.menu-expanded .logo,
+body.menu-expanded nav button {
+  position: relative;
+  z-index: 100;
+}
+
+body.menu-expanded .logo path {
+  fill: var(--white);
+}
+
+body.menu-expanded button path {
+  stroke: var(--white);
 }
 
 /*=================HOME================= */
@@ -169,154 +312,7 @@ header .content {
   color: var(--green);
 }
 
-/* ========Navigation========== */
-
-nav {
-  display: flex;
-  height: var(--nav-height);
-
-  position: fixed;
-  top: 0;
-  width: 100vw;
-
-  z-index: 100;
-}
-
-nav .wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-nav.scroll {
-  background: var(--green);
-  width: 100vw;
-}
-
-nav.scroll svg:nth-child(1) path {
-  fill: var(--white);
-}
-
-nav.scroll button path {
-  stroke: var(--white);
-}
-
-nav button {
-  background: none;
-  cursor: pointer;
-}
-
-/* ======== Menu-expanded ========== */
-
-body.menu-expanded {
-  overflow: hidden;
-}
-
-body.menu-expanded > :not(nav) {
-  visibility: hidden;
-}
-
-.menu,
-.close-menu,
-body.menu-expanded .open-menu {
-  opacity: 0;
-  visibility: hidden;
-}
-
-body.menu-expanded .close-menu {
-  right: 2rem;
-}
-
-body.menu-expanded .menu,
-body.menu-expanded .close-menu {
-  opacity: 1;
-  visibility: visible;
-}
-
-.menu {
-  transform: translateY(100%);
-}
-
-body.menu-expanded .menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  background: var(--green);
-
-  width: 100vw;
-  height: 100vh;
-
-  padding: var(--nav-height);
-
-  transition: transform 350ms;
-  transform: translateY(0);
-}
-
-body.menu-expanded nav {
-  position: relative;
-}
-
-.menu ul:nth-child(1) {
-  display: flex;
-  flex-direction: column;
-  gap: 4.8rem;
-
-  font-size: 2.4rem;
-  line-height: 3.1rem;
-  font-weight: 700;
-
-  margin-top: 6rem;
-}
-
-.menu ul li a {
-  color: var(--white);
-}
-
-.menu .button {
-  width: 27.4rem;
-  height: 5.5rem;
-
-  margin-top: 4.8rem;
-  margin-bottom: 8rem;
-  padding: 1.6rem 3.2rem;
-
-  background: var(--white);
-
-  border-radius: 4rem;
-
-  font-weight: 700;
-  font-size: 1.8rem;
-  text-transform: uppercase;
-  line-height: 23.4rem;
-  color: var(--green);
-}
-
-.menu .social-links {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 3.2rem;
-}
-
-.social-links svg path {
-  fill: var(--white);
-}
-
-body.menu-expanded .logo,
-body.menu-expanded nav button {
-  position: relative;
-  z-index: 100;
-}
-
-body.menu-expanded .logo path {
-  fill: var(--white);
-}
-
-body.menu-expanded button path {
-  stroke: var(--white);
-}
-
-/* ==============HEADER CARDS========== */
+/* ==============SERVICES========== */
 
 #services header {
   margin-bottom: 6rem;
@@ -362,3 +358,5 @@ body.menu-expanded button path {
 #services .card h3 {
   margin-block: 1.6rem;
 }
+
+/* ==============ABOUT========== */
