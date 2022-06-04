@@ -16,6 +16,22 @@ function closeMenu(){
     document.body.classList.remove('menu-expanded')
 }
 
-ScrollReveal().reveal('#services');
-ScrollReveal().reveal('.card');
-ScrollReveal().reveal('.cards-info');
+ScrollReveal({
+ origin:'top',
+ distance: '3rem',
+ duration: 700,
+}).reveal(`
+ #home,
+ #home img,
+ #home
+ .stats
+ `);
+
+ScrollReveal({
+ origin:'rigth',
+ distance: '3rem',
+ duration: 700,
+}).reveal(`
+ #services header,
+ #services .card
+ `);
