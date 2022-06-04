@@ -15,3 +15,7 @@ function openMenu(){
 function closeMenu(){
     document.body.classList.remove('menu-expanded')
 }
+
+ScrollReveal().reveal('#services');
+ScrollReveal().reveal('.card');
+ScrollReveal().reveal('.cards-info');

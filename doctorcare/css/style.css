@@ -247,7 +247,7 @@ body.menu-expanded .menu {
 
   padding: var(--nav-height);
 
-  transition: transform 850ms;
+  transition: transform 350ms;
   transform: translateY(0);
 }
 
