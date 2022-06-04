@@ -16,7 +16,7 @@
   --green-dark: #00453a;
 
   --green-light: #dce9e2;
-  --green-light-2: #f7f9f9;
+  --bg-green-light: #f7f9f9;
 
   --brand-beige: #fffaf1;
 
@@ -42,6 +42,10 @@ body {
   font-family: "DM Sans", sans-serif;
 
   overflow: overlay;
+}
+
+section {
+  padding-block: 10rem;
 }
 
 .wrapper {
@@ -138,7 +142,7 @@ header .whats-button-filled .whatsIcon {
 
   border: 0.1rem solid var(--green-light);
   border-radius: 0.6rem;
-  background: var(--green-light-2);
+  background: var(--bg-green-light);
 }
 
 header img {
@@ -302,7 +306,6 @@ body.menu-expanded button path {
 /* ==============HEADER CARDS========== */
 
 #services header {
-  margin-top: 10rem;
   margin-bottom: 6rem;
 }
 
