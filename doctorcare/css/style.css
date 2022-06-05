@@ -137,10 +137,37 @@ footer {
 
   color: var(--white);
 }
+
+/* CUSTOM COLORS */
+
+#services .card circle {
+  fill: var(--brand-light);
+}
+
+#arrowToTopButton circle,
+#navigation .logo path[fill*="#00856F"] {
+  fill: var(--primary-color);
+}
+
+body.menu-expanded #navigation .logo path,
+#navigation.scroll .logo path {
+  fill: var(--white);
+}
+
+button.open-menu path[stroke*="#00856F"],
+#contact ul li path {
+  stroke: var(--primary-color);
+}
+
+#navigation.scroll button.open-menu path[stroke*="#00856F"] {
+  stroke: var(--white);
+}
+
 /* ========NAVIGATION========== */
 
 nav {
   display: flex;
+
   height: var(--nav-height);
 
   position: fixed;
@@ -159,14 +186,6 @@ nav .wrapper {
 nav.scroll {
   background: var(--primary-color);
   width: 100vw;
-}
-
-nav.scroll .logo svg:nth-child(1) path {
-  fill: var(--white);
-}
-
-nav.scroll button path {
-  stroke: var(--white);
 }
 
 nav button {
@@ -189,10 +208,6 @@ body.menu-expanded > :not(nav) {
 body.menu-expanded .open-menu {
   opacity: 0;
   visibility: hidden;
-}
-
-body.menu-expanded .close-menu {
-  right: 2rem;
 }
 
 body.menu-expanded .menu,
@@ -294,7 +309,7 @@ header .content {
 #home::before {
   content: "";
   width: 100%;
-  height: calc(108rem + var(--nav-height));
+  height: calc(76% + var(--nav-height));
   background: var(--brand-light);
   display: block;
 
@@ -375,14 +390,6 @@ header .content {
 #services .card p {
   margin-bottom: 0;
 }
-
-#services .card path {
-  stroke: var(--brand-light);
-}
-#services .card circle {
-  fill: var(--brand-light);
-}
-
 
 /* ==============ABOUT========== */
 
