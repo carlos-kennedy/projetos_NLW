@@ -59,6 +59,48 @@ section {
   padding: 0rem 2.4rem;
 }
 
+img {
+  max-width: 100%;
+}
+
+section h1 {
+  margin-bottom: 2.4rem;
+
+  font-weight: 700;
+  font-size: 3.4rem;
+  line-height: 130%;
+
+  color: var(--gray-headline);
+}
+
+section h2 {
+  margin-bottom: 1.6rem;
+
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 150%;
+
+  letter-spacing: 0.08rem;
+
+  text-transform: uppercase;
+  color: var(--green);
+}
+
+section h3 {
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 3.9rem;
+
+  color: var(--gray-headline);
+}
+
+section .content p {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 150%;
+
+  color: var(--gray-paragraph);
+}
 /* ========NAVIGATION========== */
 
 nav {
@@ -203,7 +245,6 @@ body.menu-expanded button path {
 }
 
 /*=================HOME================= */
-
 header .content {
   padding-top: calc(4.1rem + var(--nav-height));
 
@@ -226,25 +267,6 @@ header .content {
   z-index: -1;
 }
 
-#home h2 {
-  /* margin-top: 4rem; */
-  margin-bottom: 1.6rem;
-
-  font-size: 1.4rem;
-  font-weight: 700;
-  color: var(--green);
-  line-height: 2.1rem;
-}
-
-#home h1 {
-  margin-bottom: 2.4rem;
-
-  font-weight: 700;
-  font-size: 3.4rem;
-  color: var(--gray-headline);
-  line-height: 130%;
-}
-
 #home .descr {
   margin-bottom: 3.2rem;
 
@@ -254,10 +276,11 @@ header .content {
   line-height: 150%;
 }
 
-#home .whats-button-filled {
+#home button {
   width: 26.3rem;
   height: 5.2rem;
 
+  margin: 0 auto;
   margin-bottom: 6rem;
   padding: 1.6rem 3.2rem;
 
@@ -279,6 +302,11 @@ header .content {
   margin-right: 1.6rem;
 }
 
+#home img {
+  width: 26.4rem;
+  margin-bottom: -0.6rem;
+}
+
 .cards-info {
   width: 32.7rem;
   padding-block: 4rem;
@@ -291,10 +319,6 @@ header .content {
   border: 0.1rem solid var(--green-light);
   border-radius: 0.6rem;
   background: var(--bg-green-light);
-}
-
-#home img {
-  width: 26.4rem;
 }
 
 .info-specialists {
@@ -314,29 +338,8 @@ header .content {
 
 /* ==============SERVICES========== */
 
-#services header {
-  margin-bottom: 6rem;
-}
-
-#services header h2 {
-  margin-bottom: 1.6rem;
-
-  font-weight: 700;
-  font-size: 1.4rem;
-  line-height: 150%;
-
-  letter-spacing: 0.08rem;
-
-  text-transform: uppercase;
-  color: var(--green);
-}
-
 #services header h3 {
-  font-weight: 700;
-  font-size: 3rem;
-  line-height: 3.9rem;
-  text-align: center;
-  color: var(--gray-headline);
+  margin-bottom: 6rem;
 }
 
 #services .cards {
@@ -357,6 +360,20 @@ header .content {
 
 #services .card h3 {
   margin-block: 1.6rem;
+
+  font-size: 2.2rem;
+  line-height: 3.1rem;
+  text-align: left;
 }
 
 /* ==============ABOUT========== */
+
+#about {
+  text-align: left;
+  background: var(--brand-beige);
+}
+
+#about .content p {
+  margin-top: 2.4rem;
+  margin-bottom: 6rem;
+}

@@ -65,7 +65,7 @@
             <div class="menu">
                 <ul class="nav-list">
                     <li><a title="Inicio" href="#home" onclick="closeMenu()">Ínicio</a></li>
-                    <li><a title="Sobre" href="#">Sobre</a></li>
+                    <li><a title="Sobre" href="#about" onclick="closeMenu()">Sobre</a></li>
                     <li><a title="Serviços" href="#services" onclick="closeMenu()">Serviços</a></li>
                     <!-- <li><a href="#">Depoimentos</a></li> -->
                 </ul>
@@ -145,12 +145,13 @@
 
     </nav>
 
-    <header id="home">
+    <section id="home">
         <div class="wrapper">
-
-            <div class="content">
+            <header>
                 <h2>BOAS-VINDAS A DOCTORCARE 👋</h2>
                 <h1>Assistência médica simplificada para todos</h1>
+            </header>
+            <div class="content">
                 <p class="descr">
                     Os médicos da DoctorCare vão além dos sintomas para tratar a causa
                     raiz de sua doença e proporcionar uma cura a longo prazo.
@@ -164,26 +165,28 @@
                     </svg>
                     Agende sua consulta
                 </button>
+
                 <img id="bg" src="assets/image.png" alt="Modelo mulher negra vestindo moletom verde sorrindo" />
-                <div class="cards-info">
-                    <div class="info-customers">
-                        <h3>+3.500</h3>
-                        <p>Pacientes atendidos</p>
-                        <div class="info-specialists">
-                            <h3>+15</h3>
-                            <p>Especialistas disponíveis</p>
-                        </div>
-                        <div class="info-years">
-                            <h3>+10</h3>
-                            <p>Anos no mercado</p>
-                        </div>
+
+            </div>
+            <div class="cards-info">
+                <div class="info-customers">
+                    <h3>+3.500</h3>
+                    <p>Pacientes atendidos</p>
+                    <div class="info-specialists">
+                        <h3>+15</h3>
+                        <p>Especialistas disponíveis</p>
+                    </div>
+                    <div class="info-years">
+                        <h3>+10</h3>
+                        <p>Anos no mercado</p>
                     </div>
                 </div>
             </div>
 
         </div>
 
-    </header>
+    </section>
 
     <section id="services">
         <div class="wrapper">
@@ -268,17 +271,43 @@
     <section id="about">
         <div class="wrapper">
             <header>
-                <h2></h2>
+                <h2>SOBRE NÓS</h2>
+                <h3>Entenda quem somos e por que existimos</h3>
+            </header>
+
+            <div class="content">
+                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+                    duis enim. Amet minim
+                    mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.
+                    Amet minim mollit non
+                    deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim. Amet minim
+                    mollit non deserunt
+                    ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim. Amet minim mollit non
+                    deserunt ullamco est
+                    sit aliqua dolor do amet sint.</p>
+
+                <img src="assets/doutor-feliz-segurando-uma-prancheta-com-seus-pacientes.png"
+                    alt="Médico feliz segurando uma ficha dos Pacientes">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="wrapper">
+            <header>
                 <h3></h3>
             </header>
 
             <div class="content">
-
+                <!-- <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3676.208738038064!2d-43.44246877291303!3d-22.868746255784846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9961cd9e8a9143%3A0x94cf7f22cd8f09fc!2sHospital%20Municipal%20Albert%20Schweitzer!5e0!3m2!1spt-BR!2sbr!4v1654390303602!5m2!1spt-BR!2sbr"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="true" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe> -->
             </div>
         </div>
     </section>
     <!-- ScrollReveal Lib -->
-    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src=" https://unpkg.com/scrollreveal"></script>
     <script src="main.js"></script>
 </body>
 

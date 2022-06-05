@@ -22,7 +22,8 @@ ScrollReveal({
  duration: 700,
 }).reveal(`
  #home,
- #home img,
+ #home
+ img,
  #home
  .stats
  `);
@@ -32,6 +33,20 @@ ScrollReveal({
  distance: '3rem',
  duration: 700,
 }).reveal(`
- #services header,
- #services .card
+ #services
+  header,
+ #services
+ .card
+ `);
+
+ScrollReveal({
+ origin:'left',
+ distance: '3rem',
+ duration: 700,
+}).reveal(`
+ #about,
+ #about 
+ header,
+ #about 
+ .content
  `);
