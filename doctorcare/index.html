@@ -66,11 +66,13 @@
                 <ul class="nav-list">
                     <li><a title="Inicio" href="#home" onclick="closeMenu()">Ínicio</a></li>
                     <li><a title="Sobre" href="#about" onclick="closeMenu()">Sobre</a></li>
+                    <li><a title="Contato" href="#contact" onclick="closeMenu()">Contato</a></li>
                     <li><a title="Serviços" href="#services" onclick="closeMenu()">Serviços</a></li>
                     <!-- <li><a href="#">Depoimentos</a></li> -->
                 </ul>
 
-                <a class="button" title="Agende a sua consulta" href="#">Agende a sua consulta</a>
+                <a class="button" title="Agende a sua consulta" href="#contact-button" onclick="closeMenu()">Agende a
+                    sua consulta</a>
 
                 <ul class="social-links">
                     <li>
@@ -152,11 +154,12 @@
                 <h1>Assistência médica simplificada para todos</h1>
             </header>
             <div class="content">
-                <p class="descr">
+                <p>
                     Os médicos da DoctorCare vão além dos sintomas para tratar a causa
                     raiz de sua doença e proporcionar uma cura a longo prazo.
                 </p>
-                <button class="whats-button-filled">
+                
+                <a href="#contact-button" target="_self" class="button">
                     <svg class="whatsIcon" width="18" height="18" viewBox="0 0 18 18" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -164,7 +167,7 @@
                             fill="white" />
                     </svg>
                     Agende sua consulta
-                </button>
+                </a>
 
                 <img id="bg" src="assets/image.png" alt="Modelo mulher negra vestindo moletom verde sorrindo" />
 
@@ -287,7 +290,7 @@
                     sit aliqua dolor do amet sint.</p>
 
                 <img src="assets/doutor-feliz-segurando-uma-prancheta-com-seus-pacientes.png"
-                    alt="Médico feliz segurando uma ficha dos Pacientes">
+                    alt="Médico feliz segurando uma prancheta com seus Pacientes">
             </div>
         </div>
     </section>
@@ -295,14 +298,60 @@
     <section id="contact">
         <div class="wrapper">
             <header>
-                <h3></h3>
+                <h3>Entre em contato com a gente!</h3>
             </header>
 
             <div class="content">
+
+                <ul>
+                    <li>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z"
+                                stroke="#00856F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z"
+                                stroke="#00856F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                        <a class="location" href="https://goo.gl/maps/raWPYRwyaaFBycGFA" target="_blank"
+                            rel="noopener noreferrer">
+                            R. Amauri Souza, 346
+                        </a>
+
+                    </li>
+
+                    <li>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z"
+                                stroke="#00856F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M22 6L12 13L2 6" stroke="#00856F" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+
+                        <a href="mailto:contato@doctorcare.com" class="mail">
+                            contato@doctorcare.com
+                        </a>
+                    </li>
+                </ul>
                 <!-- <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3676.208738038064!2d-43.44246877291303!3d-22.868746255784846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9961cd9e8a9143%3A0x94cf7f22cd8f09fc!2sHospital%20Municipal%20Albert%20Schweitzer!5e0!3m2!1spt-BR!2sbr!4v1654390303602!5m2!1spt-BR!2sbr"
                     width="100%" height="100%" style="border:0;" allowfullscreen="true" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+
+                <a href="https://wa.me/5511987654321" id="contact-button" class="button">
+                    <svg class="whatsIcon" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12.8337 10.6667C12.667 10.5833 11.5837 10.0833 11.417 10C11.2503 9.91668 11.0837 9.91668 10.917 10.0833C10.7503 10.25 10.417 10.75 10.2503 10.9167C10.167 11.0833 10.0003 11.0833 9.83366 11C9.25033 10.75 8.66699 10.4167 8.16699 10C7.75033 9.58334 7.33366 9.08334 7.00033 8.58334C6.91699 8.41668 7.00033 8.25001 7.08366 8.16668C7.16699 8.08334 7.25033 7.91668 7.41699 7.83334C7.50033 7.75001 7.58366 7.58334 7.58366 7.50001C7.66699 7.41668 7.66699 7.25001 7.58366 7.16668C7.50033 7.08334 7.08366 6.08334 6.91699 5.66668C6.83366 5.08334 6.66699 5.08334 6.50033 5.08334C6.41699 5.08334 6.25033 5.08334 6.08366 5.08334C5.91699 5.08334 5.66699 5.25001 5.58366 5.33334C5.08366 5.83334 4.83366 6.41668 4.83366 7.08334C4.91699 7.83334 5.16699 8.58334 5.66699 9.25001C6.58366 10.5833 7.75033 11.6667 9.16699 12.3333C9.58366 12.5 9.91699 12.6667 10.3337 12.75C10.7503 12.9167 11.167 12.9167 11.667 12.8333C12.2503 12.75 12.7503 12.3333 13.0837 11.8333C13.2503 11.5 13.2503 11.1667 13.167 10.8333C13.167 10.8333 13.0003 10.75 12.8337 10.6667ZM14.917 3.08334C11.667 -0.166656 6.41699 -0.166656 3.16699 3.08334C0.500325 5.75001 0.000325501 9.83334 1.83366 13.0833L0.666992 17.3333L5.08366 16.1667C6.33366 16.8333 7.66699 17.1667 9.00033 17.1667C13.5837 17.1667 17.2503 13.5 17.2503 8.91668C17.3337 6.75001 16.417 4.66668 14.917 3.08334ZM12.667 14.75C11.5837 15.4167 10.3337 15.8333 9.00033 15.8333C7.75033 15.8333 6.58366 15.5 5.50033 14.9167L5.25033 14.75L2.66699 15.4167L3.33366 12.9167L3.16699 12.6667C1.16699 9.33334 2.16699 5.16668 5.41699 3.08334C8.66699 1.00001 12.8337 2.08334 14.8337 5.25001C16.8337 8.50001 15.917 12.75 12.667 14.75Z"
+                            fill="white" />
+                    </svg>
+                    Agende sua consulta
+                </a>
+
+                <img src="assets/homem-usando-dispositivo-movel-enquanto-esta-sentado-no-sofa.png"
+                    alt="homem usando dispositivo movel enquanto esta sentado no sofá">
             </div>
         </div>
     </section>

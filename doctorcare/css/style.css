@@ -95,12 +95,36 @@ section h3 {
 }
 
 section .content p {
+  margin-bottom: 3.2rem;
+
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 150%;
 
   color: var(--gray-paragraph);
 }
+
+.button {
+  width: 26.7rem;
+  height: 5.6rem;
+  padding: 1.6rem 3.2rem;
+  margin-bottom: 6rem;
+  background: var(--green);
+
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+
+  border-radius: 4rem;
+
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.8rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
 /* ========NAVIGATION========== */
 
 nav {
@@ -267,39 +291,26 @@ header .content {
   z-index: -1;
 }
 
-#home .descr {
-  margin-bottom: 3.2rem;
-
-  font-size: 1.8rem;
-  font-weight: 400;
-  color: var(--gray-paragraph);
-  line-height: 150%;
-}
-
-#home button {
+#home .button {
   width: 26.3rem;
-  height: 5.2rem;
+  height: 5.7rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
 
   margin: 0 auto;
   margin-bottom: 6rem;
   padding: 1.6rem 3.2rem;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
   border-radius: 4rem;
-
   background: var(--green);
-  cursor: pointer;
 
   text-transform: uppercase;
+  font-size: 1.4rem;
   font-weight: 700;
   color: var(--white);
-}
-
-#home .whats-button-filled .whatsIcon {
-  margin-right: 1.6rem;
 }
 
 #home img {
@@ -366,6 +377,10 @@ header .content {
   text-align: left;
 }
 
+#services .card p {
+  margin-bottom: 0;
+}
+
 /* ==============ABOUT========== */
 
 #about {
@@ -376,4 +391,69 @@ header .content {
 #about .content p {
   margin-top: 2.4rem;
   margin-bottom: 6rem;
+}
+
+/* ==============CONTACT========== */
+
+#contact {
+  text-align: left;
+  background: var(--white);
+}
+
+/* #contact header{
+  margin-bottom: 3.2rem;
+}
+
+#contact .content ul{
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+} */
+
+#contact .content ul li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+
+  color: var(--gray-paragraph);
+}
+
+#contact .location {
+  color: var(--gray-paragraph);
+}
+
+#contact .content ul li:nth-child(1) {
+  margin-top: 3.2rem;
+  margin-bottom: 1.6rem;
+}
+
+#contact .content ul li:nth-child(2) {
+  margin-bottom: 3.2rem;
+}
+
+#contact .mail {
+  color: var(--gray-paragraph);
+}
+
+#contact .button {
+  width: 26.7rem;
+  height: 5.6rem;
+  padding: 1.6rem 3.2rem;
+  margin-bottom: 6rem;
+  background: var(--green);
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.6rem;
+
+  border-radius: 4rem;
+
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.8rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--white);
 }
