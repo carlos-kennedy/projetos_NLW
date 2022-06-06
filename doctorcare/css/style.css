@@ -184,8 +184,8 @@ nav .wrapper {
 }
 
 nav.scroll {
-  background: var(--primary-color);
   width: 100vw;
+  background: var(--primary-color);
 }
 
 nav button {
