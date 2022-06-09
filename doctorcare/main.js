@@ -12,6 +12,7 @@ function onScroll() {
   activateMenuAtCurrentSection(contact);
 }
 
+// variaveis conts targetline, sectionTop, sectionHeight, sectionTopReachOrPassedTargetline, sectionEndsAt, sectionEndPassedTargetline,sectionBoundaries, sectionId, menuElement
 function activateMenuAtCurrentSection(section) {
   const targetline = scrollY + innerHeight / 2;
 
@@ -19,11 +20,10 @@ function activateMenuAtCurrentSection(section) {
   // Quais dados vou precisar?
   const sectionTop = section.offsetTop;
   const sectionHeight = section.offsetHeight;
-
-  const sectionTopReachOrPassedTargetline = targetline > sectionTop;
+  const sectionTopReachOrPassedTargetline = targetline >= sectionTop;
 
   // Informações do dado
-  
+  const sectionEndsAt = sectionTop + sectionHeight;
   // console.log(
   //   `O topo da seção chegou o passou da linha? ${sectionTopReachOrPassedTargetline}`
   // );
@@ -32,9 +32,9 @@ function activateMenuAtCurrentSection(section) {
   // Quais dados vou precisar?
 
   // A seção termina onde?
-  const sectionEndsAt = sectionTop + sectionHeight;
 
   // O final da seção passou da linha alvo
+
   const sectionEndPassedTargetline = sectionEndsAt <= targetline;
 
   // Limite da seção

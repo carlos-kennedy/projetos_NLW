@@ -499,15 +499,17 @@ footer .social-links {
   transform: translateX(100%);
 
   transition: 1.5s;
-  transition: filter 2s;
 }
 
 #arrowToTopButton.show {
   opacity: 1;
   visibility: visible;
-  filter: brightness(1.2);
 
   transform: translateX(0);
+}
+
+#arrowToTopButton.show:hover {
+  filter: brightness(1.2);
 }
 
 /* ==============RESPONSIVO========== */
@@ -725,7 +727,7 @@ footer .social-links {
 
   #services header h3 {
     line-height: 5.2rem;
-    width: 44rem;
+    width: 49rem;
     margin: 0 auto;
     margin-bottom: 6.4rem;
   }
