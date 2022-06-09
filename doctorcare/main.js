@@ -23,6 +23,7 @@ function activateMenuAtCurrentSection(section) {
   const sectionTopReachOrPassedTargetline = targetline > sectionTop;
 
   // Informações do dado
+  
   // console.log(
   //   `O topo da seção chegou o passou da linha? ${sectionTopReachOrPassedTargetline}`
   // );
